@@ -1,0 +1,13 @@
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header__container h1, .header__container h3{
+    margin:20px;
+}
+.header__container h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
