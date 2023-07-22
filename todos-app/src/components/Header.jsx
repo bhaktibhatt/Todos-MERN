@@ -8,7 +8,7 @@ const Header = () => {
     <div className='header__container'>
         <h1>TODOS APP</h1><br/>
         <h3>Welcome ! 
-          {/* <span>{user.name}</span> */}
+          <span>{user.name}</span>
           </h3> 
     </div>
   )

@@ -3,12 +3,15 @@ import Header from './Header'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../features/userSlice'
 import './TodosHome.css'
+import { addNewTodo } from '../redux/actions'
+
 const TodosHome = () => {
 
   const [text,setText] = useState("");
 
-  const onFormSubmit = () =>{
-
+  const onFormSubmit = (e) =>{
+    e.preventDefault();
+    dispatch(addNewTodo());
   }
   const onInputChange = (e) =>{
     setText(e.target.value);
