@@ -13,8 +13,8 @@ function App() {
       <div className='bg-img-container'>
         <img className='bg-img' src={wave} alt=""></img>
       </div>
-      {user ? <TodosHome/> : <Login/>}
-      {/* <TodosHome/> */}
+      {/* {user ? <TodosHome/> : <Login/>} */}
+      <TodosHome/>
     </div>
   )
 }
