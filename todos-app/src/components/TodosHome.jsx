@@ -13,6 +13,7 @@ const TodosHome = () => {
   const onFormSubmit = (e) =>{
     e.preventDefault();
     dispatch(addNewTodo(text));
+    setText('');
   }
   const onInputChange = (e) =>{
     setText(e.target.value);
@@ -25,7 +26,7 @@ const TodosHome = () => {
         <input 
         className='input__todo' 
         placeholder="Enter new Todo..." 
-        type="text" onChange={onInputChange} />
+        type="text" onChange={onInputChange} value={text}/>
       </form>
     </div>
   )
