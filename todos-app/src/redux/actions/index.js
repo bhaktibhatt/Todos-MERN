@@ -13,6 +13,7 @@ export const addNewTodo = (data) =>async (dispatch) => {
     }
 }
 
+//! call api that gets all todos from the database
 export const getAllTodos = () =>  async (dispatch) => {
     try {
         const res = await axios.get(`${API_URL}/todos`, { data } )
