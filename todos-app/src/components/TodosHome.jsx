@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import './TodosHome.css'
 import { addNewTodo } from '../redux/actions'
+import TodosCard from './TodosCard'
 
 const TodosHome = () => {
   const [text,setText] = useState("");
@@ -28,6 +29,9 @@ const TodosHome = () => {
         placeholder="Enter new Todo..." 
         type="text" onChange={onInputChange} value={text}/>
       </form>
+      <div className='todos-card-container'>
+      <TodosCard/>
+      </div>
     </div>
   )
 }
